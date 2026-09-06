@@ -92,8 +92,18 @@ public class Main {
 
         System.out.print("Digite o novo nome do contato: ");
         String novoNome = scanner.nextLine();
-        System.out.print("Digite o novo telefone do contato: ");
+        String nomeValido = validarNome(novoNome);
+        if (nomeValido != null) {
+            System.out.println(nomeValido);
+            return;
+        }
+        System.out.print("Digite o novo telefone do contato: ");    
         String novoTelefone = scanner.nextLine();
+        String telefoneValido = validarTelefone(novoTelefone);
+        if (telefoneValido != null) {
+            System.out.println(telefoneValido);
+            return;
+        }
 
         contatoParaEditar.setNome(novoNome);
         contatoParaEditar.setTelefone(novoTelefone);
