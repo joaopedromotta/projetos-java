@@ -42,6 +42,13 @@ public class Main {
         galinha1.cacarejar();
         iguana1.sibilo();
         pardal1.piar();
-        tartaruga1.botarOvo(tartaruga1.getNome());
+
+        tartaruga1.botarOvo();
+        cachorro1.correr();
+        gato1.dormir();
+        calopsita1.brincar();
+        iguana1.correr();
+        tartaruga1.dormir();
+
     }
 }

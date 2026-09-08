@@ -67,36 +67,33 @@ public class Animal {
     }
 
 
-    public void lamber(String nome){
-        System.out.println(nome + "está lambendo.");
+
+    public void correr() {
+        System.out.println(getNome() + " está correndo.");
     }
 
-    public void correr(String nome) {
-        System.out.println(nome + " está correndo.");
+    public void dormir() {
+        System.out.println(getNome() + " está dormindo.");
     }
 
-    public void dormir(String nome) {
-        System.out.println(nome + " está dormindo.");
+    public void brincar() {
+        System.out.println(getNome() + " está brincando.");
     }
 
-    public void brincar(String nome) {
-        System.out.println(nome + " está brincando.");
+    public void comer() {
+        System.out.println(getNome() + " está comendo.");
     }
 
-    public void comer(String nome) {
-        System.out.println(nome + " está comendo.");
+    public void beber() {
+        System.out.println(getNome() + " está bebendo.");
     }
 
-    public void beber(String nome) {
-        System.out.println(nome + " está bebendo.");
+    public void emitirSom() {
+        System.out.println(getNome() + " está emitindo som.");
     }
 
-    public void emitirSom(String nome) {
-        System.out.println(nome + " está emitindo som.");
-    }
-
-    public void botarOvo(String nome){
-        System.out.println(nome + " botou um ovo");
+    public void botarOvo(){
+        System.out.println(getNome() + " botou um ovo");
     }
 
     @Override

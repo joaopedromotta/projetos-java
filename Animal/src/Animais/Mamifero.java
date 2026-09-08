@@ -5,7 +5,11 @@ public class Mamifero extends Animal {
         super(nome, familia, cor, raca, sexo, idade);
     }
 
-    public void amamentar(String nome) {
-        System.out.println(nome + " está amamentando.");
+    public void amamentar() {
+        System.out.println(getNome() + " está amamentando.");
+    }
+
+        public void lamber(){
+        System.out.println(getNome() + "está lambendo.");
     }
 }

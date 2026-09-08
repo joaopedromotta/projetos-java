@@ -5,8 +5,8 @@ public class Ave extends Animal {
         super(nome, familia, cor, raca, sexo, idade);
     }   
 
-    public void voar(String nome) {
-        System.out.println(nome + " está voando.");
+    public void voar() {
+        System.out.println(getNome() + " está voando.");
     }
 
 }
