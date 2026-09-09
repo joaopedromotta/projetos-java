@@ -12,6 +12,10 @@ public class Tartaruga extends Reptil{
     public void Esconder(){
         System.out.printf("%s se escondeu no casco\n", getNome());
     }
+    
+    public void emitirSom(){
+        System.out.printf("%s Não emite som\n", getNome());
+    }
 
 
 }

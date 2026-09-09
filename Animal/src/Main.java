@@ -35,14 +35,14 @@ public class Main {
 
         //Acoes de cada classe
 
-        cachorro1.latir();
-        gato1.miar();
-        arara1.gritar();
-        calopsita1.cantar();
-        galinha1.cacarejar();
-        iguana1.sibilo();
-        pardal1.piar();
-
+        cachorro1.emitirSom();
+        gato1.emitirSom();
+        arara1.emitirSom();
+        calopsita1.emitirSom();
+        galinha1.emitirSom();
+        iguana1.emitirSom();
+        pardal1.emitirSom();
+        
         tartaruga1.botarOvo();
         cachorro1.correr();
         gato1.dormir();

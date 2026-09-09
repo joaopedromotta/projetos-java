@@ -5,7 +5,7 @@ public class Pardal extends Ave {
         super(nome, familia, sexo, cor, habitat, idade);
     }
 
-    public void piar(){
+    public void emitirSom(){
         System.out.printf("%s piou\n", getNome());
     }
 }

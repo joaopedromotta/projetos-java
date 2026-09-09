@@ -1,6 +1,6 @@
 package Animais;
 
-public class Mamifero extends Animal {
+abstract class Mamifero extends Animal {
     public Mamifero(String nome, String familia, String cor, String raca, String sexo, int idade) {
         super(nome, familia, cor, raca, sexo, idade);
     }
@@ -9,7 +9,10 @@ public class Mamifero extends Animal {
         System.out.println(getNome() + " está amamentando.");
     }
 
-        public void lamber(){
+    public void lamber(){
         System.out.println(getNome() + "está lambendo.");
     }
+
+    @Override
+     public abstract void emitirSom();
 }

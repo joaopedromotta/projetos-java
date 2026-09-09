@@ -5,12 +5,14 @@ public class Gato extends Mamifero{
         super(nome, familia, raca, cor, sexo, idade);
     }
 
-    public void miar(){
+    public void emitirSom(){
         System.out.printf("%s miou\n", getNome());
-    }
+    };
     
     public void roronar(){
         System.out.printf("%s roronou\n", getNome());
     }
+
+
 
 }

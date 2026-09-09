@@ -5,11 +5,11 @@ public class Cachorro extends Mamifero{
         super(nome, familia, sexo, cor, habitat, idade);
     }
 
-    public void latir(){
-        System.out.printf("%s latiu\n", getNome());
-    }
-
     public void sacudir(){
         System.out.printf("%s sacudiu\n", getNome());
+    }
+
+    public void emitirSom(){
+        System.out.printf("%s latiu\n", getNome());
     }
 }

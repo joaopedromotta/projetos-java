@@ -5,7 +5,7 @@ public class Galinha extends Ave{
         super(nome, familia, sexo, cor, habitat, idade);
     }
 
-    public void cacarejar(){
+    public void emitirSom(){
         System.out.printf("%s cacarejou\n", getNome());
     }
     

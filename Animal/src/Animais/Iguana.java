@@ -12,4 +12,8 @@ public class Iguana extends Reptil{
     public void escalar(){
         System.out.printf("%s escalou\n", getNome());
     }
+
+    public void emitirSom(){
+        System.out.println(getNome() + " Não emite som");
+    }
 }

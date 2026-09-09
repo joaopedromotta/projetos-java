@@ -5,12 +5,8 @@ public class Arara extends Ave{
         super(nome, familia, sexo, cor, habitat, idade);
     }
 
-    public void gritar(){
+    public void emitirSom(){
         System.out.printf("%s gritou\n", getNome());
-    }
-
-    public void falar(){
-        System.out.printf("%s falou\n", getNome());
     }
     
 }

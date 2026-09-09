@@ -5,7 +5,7 @@ public class Calopsita extends Ave{
         super(nome, familia, sexo, cor, habitat, idade);
     }
 
-    public void cantar(){
+    public void emitirSom(){
         System.out.printf("%s canta\n", getNome());
     }
 

@@ -1,6 +1,6 @@
 package Animais;
 
-public class Animal {
+abstract class Animal {
 
     private String nome;
     private String familia;
@@ -88,9 +88,7 @@ public class Animal {
         System.out.println(getNome() + " está bebendo.");
     }
 
-    public void emitirSom() {
-        System.out.println(getNome() + " está emitindo som.");
-    }
+    public abstract void emitirSom();
 
     public void botarOvo(){
         System.out.println(getNome() + " botou um ovo");
