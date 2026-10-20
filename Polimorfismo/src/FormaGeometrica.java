@@ -4,13 +4,11 @@ public abstract class FormaGeometrica {
     public abstract double getPerimetro();
 
     public double getArea(int casasDecimais) {
-        double area = getArea();
-        return arredondar(area, casasDecimais);
+        return arredondar(getArea(), casasDecimais);
     }
 
     public double getPerimetro(int casasDecimais) {
-        double perimetro = getPerimetro();
-        return Math.round(perimetro * Math.pow(10, casasDecimais)) / Math.pow(10, casasDecimais);
+        return arredondar(getPerimetro(), casasDecimais);
     }
 
     private double arredondar(double valor, int casasDecimais) {
