@@ -25,10 +25,10 @@ public class Main {
         for (FormaGeometrica firgura : figuras) {
 
             System.out.println(
-                "Posicao no Array: " + figuras.indexOf(firgura)
+                "Classe: " + firgura.getClass()
             );
             System.out.println(
-                "Classe: " + firgura.getClass()
+                "Posicao no Array: " + figuras.indexOf(firgura)
             );
 
             System.out.printf(
