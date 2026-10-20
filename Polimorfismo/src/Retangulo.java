@@ -21,8 +21,8 @@ public class Retangulo extends FormaGeometrica{
         return 2 * (largura + altura);
     }
     
-    public boolean isQuadrado() {
-        return largura == altura;
+    public String isQuadrado() {
+        return largura == altura ? "Sim" : "Não";
     }
 
 }

@@ -11,16 +11,16 @@ public class Main {
         figuras.add(new Retangulo(4, 6));
 
         // Figuras de TESTES
-        // figuras.add(new Triangulo(6, 6, 6));
-        // figuras.add(new Triangulo(5, 5, 6));
-        // figuras.add(new Retangulo(4, 4));
-        // figuras.add(new Retangulo(8, 3));
-        // figuras.add(new Circunferencia(5));
-        // figuras.add(new Circunferencia(2));
-        // figuras.add(new Pentagono(6));
-        // figuras.add(new Pentagono(3));
+        figuras.add(new Triangulo(6, 6, 6));
+        figuras.add(new Triangulo(5, 5, 6));
+        figuras.add(new Retangulo(4, 4));
+        figuras.add(new Retangulo(8, 3));
+        figuras.add(new Circunferencia(5));
+        figuras.add(new Circunferencia(2));
+        figuras.add(new Pentagono(6));
+        figuras.add(new Pentagono(3));
 
-        System.out.println("=== FIGURAS GEOMETRICAS ===");
+        System.out.println("\n\n=== FIGURAS GEOMETRICAS ===");
 
         for (FormaGeometrica firgura : figuras) {
 
@@ -53,6 +53,8 @@ public class Main {
             System.out.println();
         }
 
+        System.out.println("****** METODOS EXCLUSIVOS ******\n\n");
+
         mostrarDiametros(figuras);
         mostrarQuadrados(figuras);
         mostrarTiposTriangulo(figuras);
@@ -72,6 +74,7 @@ public class Main {
                 System.out.printf(
                     "Diametro: %.2f%n", c.getDiametro()
                 );
+                System.out.println();
             }
         }
     }
@@ -89,7 +92,7 @@ public class Main {
                     "Posicao no Array: " + figuras.indexOf(firgura)
                 );
                 System.out.println(
-                    "E quadrado? " + r.isQuadrado()
+                    "E quadrado: " + r.isQuadrado() + "\n"
                 );
             }
         }
@@ -108,7 +111,7 @@ public class Main {
                     "Posicao no Array: " + figuras.indexOf(firgura)
                 );
                 System.out.println(
-                    "Tipo: " + t.getTipoTriangulo()
+                    "Tipo: " + t.getTipoTriangulo() + "\n"
                 );
             }
         }
@@ -125,7 +128,7 @@ public class Main {
                     "Posicao no Array: " + figuras.indexOf(firgura)
                 );
                 System.out.println(
-                    "Numero de lados: " + p.getNumeroLados()
+                    "Numero de lados: " + p.getNumeroLados() + "\n"
                 );
             }
         }

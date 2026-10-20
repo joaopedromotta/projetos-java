@@ -13,8 +13,7 @@ public abstract class FormaGeometrica {
 
     private double arredondar(double valor, int casasDecimais) {
         if (casasDecimais < 0 || casasDecimais > 10) {
-            System.out.println("O número de casas decimais não pode ser negativo.");
-            return valor;
+            throw new IllegalArgumentException("O número de casas decimais não pode ser negativo.");
         }
         double fator = Math.pow(10, casasDecimais);
         return Math.round(valor * fator) / fator;
